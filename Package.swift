@@ -15,12 +15,15 @@ let package = Package(
     targets: [
         .target(
             name: "LoginFeature",
-            dependencies: []
+            dependencies: [],
+            path: "Sources"
         ),
         .testTarget(
             name: "LoginFeatureTests",
-            dependencies: ["LoginFeature"]
+            dependencies: ["LoginFeature"],
+            path: "Tests"
         ),
     ]
 )
+
 
